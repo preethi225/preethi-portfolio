@@ -106,7 +106,7 @@ npm start
 
 ## 👩‍💻 Author
 
-**Preethi** — CS Student, 2026 Batch  
+**Preethi** — BCA CS Student specialization in CLOUD COMPUTING , 2025 Batch  
 GitHub: [@preethi225](https://github.com/preethi225)
 
 ---
