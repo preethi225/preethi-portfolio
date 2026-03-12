@@ -72,6 +72,10 @@ app.get('/api/health', (req, res) => {
 });
 
 // Serve frontend for all other routes
+// Admin page route
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
 app.get('/{*path}', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
