@@ -2,7 +2,7 @@
 
 A single-page portfolio website built with **HTML/CSS/JavaScript** (frontend), **Node.js + Express** (backend), and **MongoDB Atlas** (cloud database). Deployed globally on **Render.com**.
 
-![CI Pipeline](https://github.com/preethi225/preethi-portfolio/actions/workflows/ci.yml/badge.svg)
+![CI Pipeline](https://github.com/preethi225/preethi-portfolio/actions/workflows/main.yml/badge.svg)
 
 ---
 
