@@ -7,7 +7,7 @@ A single-page portfolio website built with **HTML/CSS/JavaScript** (frontend), *
 ---
 
 ## 🔗 Live Demo
-👉 **[https://preethi-portfolio.onrender.com](https://preethi-portfolio.onrender.com)**
+👉 **[https://preethi-portfolio-ve5z.onrender.com](https://preethi-portfolio-ve5z.onrender.com)**
 
 ---
 
