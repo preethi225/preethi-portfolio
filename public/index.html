@@ -596,8 +596,7 @@
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
       };
-
-      try {
+try {
         const res = await fetch('/api/contact', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -606,17 +605,22 @@
         const result = await res.json();
         if (res.ok) {
           msg.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
-         msg.className = 'success';
-setTimeout(() => {
-  e.target.reset();
-  msg.style.display = 'none';
-}, 4000);        } else {
+          msg.className = 'success';
+          msg.style.display = 'block';
+          btn.disabled = false;
+          btn.textContent = 'Send Message';
+          e.target.reset();
+          setTimeout(() => {
+            msg.style.display = 'none';
+            msg.className = '';
+          }, 5000);
+        } else {
           throw new Error(result.error || 'Something went wrong');
         }
       } catch (err) {
         msg.textContent = '✗ ' + err.message;
         msg.className = 'error';
-      } finally {
+        msg.style.display = 'block';
         btn.disabled = false;
         btn.textContent = 'Send Message';
       }
