@@ -606,9 +606,11 @@
         const result = await res.json();
         if (res.ok) {
           msg.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
-          msg.className = 'success';
-          e.target.reset();
-        } else {
+         msg.className = 'success';
+setTimeout(() => {
+  e.target.reset();
+  msg.style.display = 'none';
+}, 4000);        } else {
           throw new Error(result.error || 'Something went wrong');
         }
       } catch (err) {
